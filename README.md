@@ -14,7 +14,7 @@ RF-Gerät zum Empfangen und Senden verschiedener 433 MHz Funkprotokolle.
 ![Platine unten](https://github.com/damianmelson/miniCUL-433MHz/blob/master/images/pcb_unten.png)
 
 [Bauelemente](https://github.com/damianmelson/miniCUL-433MHz/tree/master/docs) von [reichelt elektronik](https://www.reichelt.de) und [LCSC](https://lcsc.com).<br>
-CN1 bestückbar mit 8-pol. CC1101-Funkmodul (433MHz D-SUN CC1101) von [eBay](https://www.ebay.de).
+CN1 bestückbar mit 8-pol. CC1101-Funkmodul (433MHz D-SUN CC1101) von [eBay](https://www.ebay.de) oder [AliExpress](https://de.aliexpress.com/).
 
 ## Bootloader
 [Optiboot Bootloader](https://github.com/damianmelson/miniCUL-433MHz/tree/master/bootloader) für ATmega328P (3.3 Volt, 8 MHz, 57600 Baud).<br>
@@ -36,8 +36,8 @@ Option -c ist anzupassen an den aktuell benutzten ISP-Programmer.
 [a-culfw](https://github.com/heliflieger/a-culfw/tree/master/culfw/Devices/miniCUL) flashen:<br>
 `avrdude -p atmega328p -c arduino -P /dev/ttyUSBx -b 57600 -U flash:w:miniCUL_433MHZ.hex:i`<br>
 
-[SIGNALduino](https://github.com/Ralf9/SIGNALDuino/releases) Firmware für miniCUL flashen:<br>
-`avrdude -p atmega328p -c arduino -P /dev/ttyUSBx -b 57600 -U flash:w:SIGNALduino_miniCUL.hex:i`<br>
+[SIGNALduino](https://github.com/RFD-FHEM/SIGNALDuino/releases) Firmware für miniCUL flashen:<br>
+`avrdude -p atmega328p -c arduino -P /dev/ttyUSBx -b 57600 -U flash:w:SIGNALduino_miniculCC1101.hex:i`<br>
 
 USBx ist anzupassen an die aktuell benutzte Schnittstelle.
 
